@@ -1,0 +1,27 @@
+team_name: "DataDivas"
+
+primary_contact:
+  name: "Sowmya Jadala"
+  email: "sowmyajadala27@gmail.com"
+  phone: "+91-8309867487"
+
+team_members:
+  - name: "Sowmya Jadala"
+    email: "sowmyajadala27@gmail.com"
+    role: "Data Engineer"
+
+github_repo: "https://github.com/sowmyajadala/India-runs-ranker"
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+methodology_summary: |
+  Rule-based ranker with explicit reasoning. Five scoring components
+  (title, career, experience, skills, behavioral signals) combined
+  with weighted scoring. Title component filters irrelevant profiles.
+  Runtime is ~2 minutes for 100,000 candidates on CPU.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  reproduction_tested: true
